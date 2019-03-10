@@ -1,9 +1,9 @@
 package tiep;
 
 public class T1808M {
-    int y = 10;
-    static int z = 20;
-    final static int k = 20;
+    int y = 3;
+    static int z = 5;
+    final static int k = 7;
 
     public static void main(String[] args){
         int x = 10;
