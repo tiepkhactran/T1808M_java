@@ -37,4 +37,7 @@ public class Hotel {
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
+    public void KetQua(){
+        System.out.println("Hotel:"+this.getName()+" ---- "+this.getLocation()+" of "+this.getOwnerName());
+    }
 }

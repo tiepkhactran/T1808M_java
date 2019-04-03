@@ -6,42 +6,28 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        int [] scores = new int[10];
-        int smallest, highest,temp,total=0;
-        double average =0.0;
-
-        //ask the user to enter 10 scores
-        for (int i = 0;i<= scores.length-1;i++)
-        {
-            System.out.print("\n\nEnter Score " + (i+1) + ": ");
-            scores[i] = name.getName();
+    public static void main(String[] args){
+        ArrayList<Hotel> hotels = new ArrayList<>();
+        for (int i=0; i<10; i++){
+            hotels.add(new Hotel());
         }
 
-        //find the lowest score
-        smallest = scores[0];
+        int j=1;
+        for(Hotel ht: Hotel){
+            System.out.println("Input for hotel "+j+" :");
+            Scanner info = new Scanner(System.in);
+            System.out.println("Input hotel name:");
+            ht.setName(info.nextLine());
 
-        for (int i = 1; i <= scores.length-1;i++)
-            if (scores[i] < smallest)
-                smallest = scores[i];
+            System.out.print("Input owner's name: ");
+            ht.setOwnerName(info.nextLine());
 
-        System.out.println("\nThe lowest score is : " + smallest);
+            System.out.print("Input location: ");
+            ht.setLocation(info.nextLine());
+            j++;
+        }
 
-        //find the highest score
-        highest = scores[0];
 
-        for (int i = 1; i <= scores.length-1;i++)
-            if (scores[i] > highest)
-                highest = scores[i];
-
-        System.out.println("\nThe highest score is : " + highest);
-
-        //find the average score
-        for (int i = 0; i<=scores.length-1;i++)
-            total = total + scores[i];
-
-        average = total/10.0;
-        System.out.println("\nThe average score is : " + average);
-
+        }
     }
-}
+
