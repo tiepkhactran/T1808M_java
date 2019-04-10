@@ -5,6 +5,21 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class PhoneBook extends Phone{
+    static class StaticPhone{
+        public void run(){
+            System.out.println("Running...");
+        }
+    }
+    class InnerPhone{
+        public void running(){
+            System.out.println("InnerPhone running...");
+        }
+    }
+    public static void main(String args[]){
+        PhoneBook.StaticPhone staticPhone=new PhoneBook.StaticPhone();
+        PhoneBook.InnerPhone innerPhone =new PhoneBook().new InnerPhone();
+
+    }
 
     public ArrayList<PhoneNumber> PhoneList;
 

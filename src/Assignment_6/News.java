@@ -40,6 +40,7 @@ public class News {
         Author = author;
     }
 
+
     public String getContent() {
         return Content;
     }
@@ -51,8 +52,6 @@ public class News {
     public float getAverageRate() {
         return AverageRate;
     }
-    public class News interface INews{
-        ầhhaduhf
-
-    }
 }
+
+

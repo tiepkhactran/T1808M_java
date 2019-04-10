@@ -1,12 +1,6 @@
 package Assignment7;
 
 import java.util.Scanner;
-
-/**
- * Main class
- *
- * @author Assignment7
- */
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
 

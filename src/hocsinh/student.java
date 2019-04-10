@@ -34,12 +34,18 @@ class Student {
                     System.out.println("Khong dat hoc bong");
                 }
             }
+            //thay commit tất cả các tên
 
-                public static void main(String[]agrs){
+            public String getMaSinhVien(){
+            return this.MaSinhVien;
+            }
+
+    public static void main(String[]agrs){
                     Student HocSinh = new Student();
                     HocSinh.inputInfo();
                     HocSinh.showInfo();
                     HocSinh.xetHB();
+
 
                 }
             }
