@@ -9,7 +9,7 @@ public class SubThread extends Thread {
                     System.out.println(i);
                     Thread.sleep(1000);
                 }
-                System.out.println("Happy New Year!!!!");
+                System.out.println("Happy!!!");
             } catch (Exception e) {
 
         }

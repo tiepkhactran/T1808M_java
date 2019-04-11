@@ -6,7 +6,7 @@ public class Main {
 
         s1.start();
 
-        System.out.println("CountDown  ---->>> ");
+        System.out.println("CountDown  ---->>>");
     }
 
 }
